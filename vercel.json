@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/favicon.png",
+      "dest": "/public/favicon.png"
+    },
+    {
+      "src": "/bootstrap.min.css",
+      "dest": "/public/bootstrap.min.css"
+    },
+    {
+      "src": "/jquery.min.js",
+      "dest": "/public/jquery.min.js"
+    },
+    {
+      "src": "/index.js",
+      "dest": "/public/index.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
+    }
+  ]
+}
